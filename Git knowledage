@@ -4,4 +4,8 @@ No wrap 没有包装
 Pull requests 拉请求
 Wiki 维基
 EG  9 commits 2 branches 0 releases 1 contributor
-    9提交  2个分支 0版本 1个贡献者
+    9提交  2个分支 0版本 1个贡献者
+    
+合并请求
+base(基本)是将要合并到的分支
+compare（比较）是你修改的分支
