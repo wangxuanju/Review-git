@@ -1,2 +1,2 @@
 # shiyanlou-001
-learn Github
+learn Github the first day
