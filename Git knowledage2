@@ -1,4 +1,10 @@
 第一步：
 cd ~/desktop 修改默认的路径至指定路径（注意cd后的空格）
 cd gitTut进入指定的文件
-第二步：
+第二步：添加用户名和 用户
+git config --global user.name "Morvan Zhou"
+git config --global user.email "ws@qq.com"
+git config user.name(显示用户名）
+第三步：
+clear（清空屏幕）
+
