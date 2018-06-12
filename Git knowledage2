@@ -7,4 +7,9 @@ git config --global user.email "ws@qq.com"
 git config user.name(显示用户名）
 第三步：
 clear（清空屏幕）
+第四步：
+git init
+Initialized empty Git repository in /Users...
+如果文件夹中还没有任何的文件, 它返回出来一句话告诉我们已经建立了一个空的 git 管理库.
+第五步：
 
