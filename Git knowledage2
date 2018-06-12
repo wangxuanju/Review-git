@@ -27,5 +27,8 @@ $ git log 查看版本库有那些操作的过程. 可以看到Author的名字�
 $ git status  对1.py文件进行一次修改,用$ git status我们就能在 status 中看到修改但还没被提交的信息了.
 之后需要我们先把这次修改添加 (add) 到可被提交 (commit) 的状态, 然后再提交 (commit) 这次的修改
 再次查看 log, 现在我们就能看到 create 1.py 和 change 1 这两条修改信息了. 而且做出这两条 commit 的 ID, 修改的 Author, 修改 Date 也被显示在上面.
-
+第七步：三种不同的diff形式
+$ git diff 当想要查看这次还没 add (unstaged) 的修改部分 和上个已经 commit 的文件有何不同
+$ git diff --cached  如果你已经 add 了这次修改, 文件变成了 “可提交状态” (staged), 我们可以在 diff 中添加参数 --cached 来查看修
+$ git diff HEAD   查看 add 过 (staged) 和 没 add (unstaged) 的修改
 
