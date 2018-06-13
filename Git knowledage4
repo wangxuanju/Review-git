@@ -1,0 +1,24 @@
+Git 具体命令
+mkdir test		（创建文件夹test） 
+cd test	（切换到test目录） 
+touch a.md		（新建a.md文件）
+git init初始化 git 仓库
+git status 这个命令顾名思义就是查看状态
+git add 1.txt 使1.txt提交到缓存区
+git commit -m 'first commit' commit 是提交的意思，-m 代表是提交信息
+git add 是先把改动添加到一个「暂存区」，你可以理解成是一个缓存区域，临时保存你的改动，而 git commit 才是最后真正的提交。这样做的好处就是防止误提交
+git log 命令可以查看所有产生的 commit 记录
+git branch 查看下当前分支情况
+git branch a 就新建了一个名字叫 a 的分支
+git checkout a切换分支
+git checkout -b a 命令的意思就是新建一个a分支，并且自动切换到a分支
+git merge 就是合并分支用到的命令
+#先做两步，第一步是切换到 master 分支，如果你已经在了就不用切换了，第二步执行 git merge a ，意思就是把a分支的代码合并过来
+git branch -d a 就可以把a分支删除了
+git branch -D a 就可以强制删除a分支
+git tag v1.0
+git tag
+#新建一个标签很简单，比如 git tag v1.0 就代表我在当前代码状态下新建了一个v1.0的标签，输入 git tag 可以查看历史 tag 记录
+git checkout v2.0 想要切换到某个tag
+
+
