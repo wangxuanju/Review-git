@@ -5,7 +5,11 @@ git checkout c5345a -- 1.py(--后有空格）使用 checkout + id c5345a + 文�
 git log --oneline --graph 以图形的形式显示
 $ git branch        # 查看当前所有的分支
 git branch dev    # 建立 dev 分支第一种方法
-git checkout -b  dev# 建立 dev 分支第二种方法
+git checkout -b  dev# 建立 dev 分支第二种方法   使用 checkout -b + 分支名, 就能直接创建和切换到新建的分支
 git branch -d dev删除分支(先切换回master才能删）D是强制删除
 git checkout dev 当我们想把 HEAD 切换去 dev 分支的时候在 dev 分支中修改
+git merge dev         # 将 dev merge 到 master 中
+git merge --no-ff -m "keep merge info" dev         # 保留 merge 信息
+#要注意的是, 如果直接 git merge dev, git 会采用默认的 Fast forward 格式进行 merge, 这样 merge 的这次操作不会有 commit 信息. 
+#log 中也不会有分支的图案. 我们可以采取 --no-ff 这种方式保留 merge 的 commit 信息.
 
