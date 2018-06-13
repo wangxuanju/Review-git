@@ -6,10 +6,22 @@ git log --oneline --graph 以图形的形式显示
 $ git branch        # 查看当前所有的分支
 git branch dev    # 建立 dev 分支第一种方法
 git checkout -b  dev# 建立 dev 分支第二种方法   使用 checkout -b + 分支名, 就能直接创建和切换到新建的分支
-git branch -d dev删除分支(先切换回master才能删）D是强制删除
+git branch -d dev删除分支(先切换回master才能删）D是强制删除用大D
 git checkout dev 当我们想把 HEAD 切换去 dev 分支的时候在 dev 分支中修改
 git merge dev         # 将 dev merge 到 master 中
 git merge --no-ff -m "keep merge info" dev         # 保留 merge 信息
 #要注意的是, 如果直接 git merge dev, git 会采用默认的 Fast forward 格式进行 merge, 这样 merge 的这次操作不会有 commit 信息. 
 #log 中也不会有分支的图案. 我们可以采取 --no-ff 这种方式保留 merge 的 commit 信息.
 
+git commit --am”change 1” 不用add直接commit(新文件不适用）
+
+git rebase dev 主分支基于Dev修改 当我们想要用 rebase 合并 dev 到 master 的时候（有可能发生冲突！）
+git rebase --continue      继续时（冲突问题已解决就选继续）
+git rebase --skip" instead 忽略时
+git rebase --abort         放弃时
+git stash  手头工作放到缓存区   用 stash 将这些改变暂时放一边，再另外单独处理任务
+
+git checkout -b boss 建立另一个 branch 用来完成老板的任务
+git checkout master  修改merge到master上去
+git merge --no-ff -m "merged boss job" boss 也许会有冲突merge 如果有冲突的话, 可以像上次那样 解决.
+Git stash pop 返回修改
