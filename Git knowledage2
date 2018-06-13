@@ -32,4 +32,19 @@ $ git status  对1.py文件进行一次修改,用$ git status我们就能在 sta
 $ git diff 当想要查看这次还没 add (unstaged) 的修改部分 和上个已经 commit 的文件有何不同
 $ git diff --cached  如果你已经 add 了这次修改, 文件变成了 “可提交状态” (staged), 我们可以在 diff 中添加参数 --cached 来查看修
 $ git diff HEAD   查看 add 过 (staged) 和 没 add (unstaged) 的修改
-
+第八步：
+git log --online 查看commit的状态
+git status -s    以精简的形式显示文件状态（“s” status的缩写模式）
+第九步：
+git reset 1.txt 使staged返回modified
+第十步：回到某一状态
+git reset --hard HEAD 回到第一次的状态？？？
+1 git reset --hard HEAD^ 回到上次commit的方法
+ git reset --hard HEAD^^ 回到上上次commit的方法
+2 git reset --hard HEAD~2 回到上上次commit的方法
+3 git reset --hard 2aliski 使用ID号码
+第十一步：
+git reflog 回到未来,并且可以看到如HEAD{0}等形式的每一步变化
+第十二步：回到某个位置的两种方法
+git reset --hard 2aliski 回到某个位置
+git reset --hard HEAD{0}回到某个位置
