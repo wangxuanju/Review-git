@@ -1,1 +1,11 @@
+checkout文件回到过去
+git checkout c5345a -- 1.py(--后有空格）使用 checkout + id c5345a + 文件目录 1.py,这样就能将1.py的指针HEAD放在这个时刻c5345
+
+开发新版本或者新属性的时候, 在另外一个分支上进行, 这样就能使开发和使用互不干扰了.
+git log --oneline --graph 以图形的形式显示
+$ git branch        # 查看当前所有的分支
+git branch dev    # 建立 dev 分支第一种方法
+git checkout -b  dev# 建立 dev 分支第二种方法
+git branch -d dev删除分支(先切换回master才能删）D是强制删除
+git checkout dev 当我们想把 HEAD 切换去 dev 分支的时候在 dev 分支中修改
 
