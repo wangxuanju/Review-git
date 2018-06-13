@@ -23,5 +23,5 @@ git stash  手头工作放到缓存区   用 stash 将这些改变暂时放一�
 
 git checkout -b boss 建立另一个 branch 用来完成老板的任务
 git checkout master  修改merge到master上去
-git merge --no-ff -m "merged boss job" boss 也许会有冲突merge 如果有冲突的话, 可以像上次那样 解决.
-Git stash pop 返回修改
+git merge --no-ff -m "merged boss job" boss 也许会有冲突merge 如果有冲突的话, 可以像上次那样 解决.
+git stash pop 返回修改
